@@ -1,0 +1,75 @@
+.row {
+  color: white;
+  /* margin-left: 20px; */
+}
+
+/* .row--flex {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.row--left {
+  padding-right: 3%;
+}
+
+.row--right {
+  margin-right: -5%;
+  padding-left: 40px;
+  cursor: pointer;
+} */
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row__poster {
+  /* max-height: 70px; */
+  object-fit: contain;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+/* @media (max-width: 1023px) { */
+  .row__posters::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  /* Track */
+  .row__posters::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  .row__posters::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  .row__posters::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .row--left {
+    display: none;
+  }
+
+  .row--right {
+    display: none;
+  }
+/* } */
+
+@media (max-width: 1024px) {
+  .row__posters::-webkit-scrollbar {
+    display: none;
+  }
+}
